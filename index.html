@@ -1,179 +1,121 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-  
-  <title>一如年少de模样</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Coding changs world ------科学技术宅">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta charset="utf-8">
   
   
+  
+    <meta name="description" content="Coding changs world ------科学技术宅">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    
+    一如年少de模样</title>
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="Coding changs world ------科学技术宅">
-<meta property="og:type" content="website">
-<meta property="og:title" content="一如年少de模样">
-<meta property="og:url" content="https://marshxq.github.io/index.html">
-<meta property="og:site_name" content="一如年少de模样">
-<meta property="og:description" content="Coding changs world ------科学技术宅">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="青莲剑仙">
-<meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1589526173256">-->
+<link rel="stylesheet" href="/css/technology.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
 <meta name="generator" content="Hexo 4.2.1"></head>
 
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="青莲剑仙" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="青莲剑仙"></a>
-       </div>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <canvas id="canvas"></canvas>
+<div class="technology-body">
+    <div class="technology-frame">
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
     </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="青莲剑仙">
-            <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="青莲剑仙" alt="青莲剑仙">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>Articles</span>1</div>
-        <div><span>Tags</span>0</div>
-        <div><span>Categories</span>0</div>
-    </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
+    <section class="technology-circle">
+      <div class="wrap">
+        <div class="inner">
+          <div class="middle">
+            <div class="middle2">
             </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives" title="文章归档">
-            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
-            <div class="mdui-list-item-content">
-                文章归档
-            </div>
-        </a>
-        
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/icon-info-circle" title="关于博客">
-            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-            <div class="mdui-list-item-content">
-                关于博客
-            </div>
-        </a>
-        
-    </div>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-search">
-        <form id="search_form" action_e="https://marshxq.github.io/" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
-        </form>
-    </div>
-</div>
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Social</h3>
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://space.bilibili.com/30523725" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/marshxq/marshxq.github.io" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-  
-  
-
-  
-  
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Archive</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2020 青莲剑仙
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
-    </div>
-</div><!-- .nexmoe-drawer -->
-  </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <section class="nexmoe-posts">
-    
-    <div class="nexmoe-post">
-        <a href="/2020/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
-                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="我的第一篇博客文章" class="lazyload">
-                    <h1>我的第一篇博客文章</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年05月14日</a>
-            <a><i class="nexmoefont icon-areachart"></i>66 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+          </div>
         </div>
-
-        <article>
-            
-                <h2 id="首秀"><a href="#首秀" class="headerlink" title="首秀"></a>首秀</h2><ul>
-<li><p>大家好，这是我第一次搭建Hexo博客</p>
-</li>
-<li><p>之前都是在博客园写文章，以后可以在这里跟大家分享自己喜欢的东西了</p>
-</li>
-<li><p>希望多多光临哈</p>
-</li>
-</ul>
-<hr>
-<h2 id="我的博客园地址"><a href="#我的博客园地址" class="headerlink" title="我的博客园地址"></a>我的博客园地址</h2><p><a href="https://www.cnblogs.com/marshu/" target="_blank" rel="noopener">https://www.cnblogs.com/marshu/</a></p>
-
-            
-        </article>
-    </div>
-    
-</section>
-
+      </div>
+    </section>
+    <section class="technology-nav">
+      <nav class="nav-box">
+        <section>
+          <a data-href="profile-page" data-color="pink" href="/about/">About me</a>
+          <a class="nav-item-search" data-href="memories-page" data-color="light-pink" href="javascript:;">Search</a>
+        </section>
+        <section>
+          <a data-href="history-page" data-color="light-purple" href="/gallery/">Gallery</a>
+          <a data-href="product-page" data-color="purple" href="/archives/">Archives</a>
+        </section>
+      </nav>
+      <div class="message"><h3>科幻世界</h3></div>
+    </section>
+    <div class="video-inner text-center text-white">
+      <h1 style="text-align: center">一如年少de模样</h1>
+      <p></p>
+      <div class="brand-wapper" ><img src="/images/hexo-inverted.png" class="brand" alt="一如年少de模样"></div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
-<script >hljs.initHighlightingOnLoad();</script>
+  <div class="search-form-wrap">
+    <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+  </div>
+
+    </div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+<script src="/js/lazyload.min.js"></script>
 
 
-<script src="/js/app.js?v=1589526173258"></script>
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
   
+<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
 
+
+<script src="/js/technology.js"></script>
+
+
+  </div>
 </body>
-
 </html>
