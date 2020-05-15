@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1589529963592">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1589530185793">-->
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -141,11 +141,11 @@
 
         <article>
             
-                <h2 id="环境准备：Linux系统，gcc-4-9-3-64-gnu-tar-gz，openssl-1-0-2k-tar-gz"><a href="#环境准备：Linux系统，gcc-4-9-3-64-gnu-tar-gz，openssl-1-0-2k-tar-gz" class="headerlink" title="环境准备：Linux系统，gcc-4.9.3-64-gnu.tar.gz，openssl-1.0.2k.tar.gz"></a>环境准备：Linux系统，gcc-4.9.3-64-gnu.tar.gz，openssl-1.0.2k.tar.gz</h2><h1 id="1、搭建mips64el-linux-gcc环境"><a href="#1、搭建mips64el-linux-gcc环境" class="headerlink" title="1、搭建mips64el-linux-gcc环境"></a>1、搭建mips64el-linux-gcc环境</h1><p>（1）在/opt目录解压 gcc-4.9.3-64-gnu.tar.gz，把对应的 /opt/gcc-4.9.3-64-gnu/bin 目录添加到环境变量；</p>
+                <h2 id="环境准备：Linux系统，gcc-4-9-3-64-gnu-tar-gz，openssl-1-0-2k-tar-gz"><a href="#环境准备：Linux系统，gcc-4-9-3-64-gnu-tar-gz，openssl-1-0-2k-tar-gz" class="headerlink" title="环境准备：Linux系统，gcc-4.9.3-64-gnu.tar.gz，openssl-1.0.2k.tar.gz"></a>环境准备：Linux系统，gcc-4.9.3-64-gnu.tar.gz，openssl-1.0.2k.tar.gz</h2><h2 id="1、搭建mips64el-linux-gcc环境"><a href="#1、搭建mips64el-linux-gcc环境" class="headerlink" title="1、搭建mips64el-linux-gcc环境"></a>1、搭建mips64el-linux-gcc环境</h2><p>（1）在/opt目录解压 gcc-4.9.3-64-gnu.tar.gz，把对应的 /opt/gcc-4.9.3-64-gnu/bin 目录添加到环境变量；</p>
 <p>（2）编辑/etc/profile文件，在最后添加 </p>
 <pre><code>export PATH=/opt/gcc-4.9.3-64-gnu/bin:$PATH</code></pre><p>（3）使用</p>
 <pre><code>source /etc/profile</code></pre><p>   立即生效</p>
-<h1 id="2、通过mips64el-linux-gcc编译，安装openssl"><a href="#2、通过mips64el-linux-gcc编译，安装openssl" class="headerlink" title="2、通过mips64el-linux-gcc编译，安装openssl"></a>2、通过mips64el-linux-gcc编译，安装openssl</h1><p>（1） 解压openssl-1.0.2k.tar.gz，进入解压后的目录openssl-1.0.2k</p>
+<h2 id="2、通过mips64el-linux-gcc编译，安装openssl"><a href="#2、通过mips64el-linux-gcc编译，安装openssl" class="headerlink" title="2、通过mips64el-linux-gcc编译，安装openssl"></a>2、通过mips64el-linux-gcc编译，安装openssl</h2><p>（1） 解压openssl-1.0.2k.tar.gz，进入解压后的目录openssl-1.0.2k</p>
 <p>（2） 暂时把环境变量换成mips  gcc的，重启就会失效，这样不需要去Makefile文件修改了</p>
 <pre><code>export CC=/opt/gcc-4.9.3-64-gnu/bin/mips64el-linux-gcc
 
@@ -156,7 +156,7 @@ export AR=/opt/gcc-4.9.3-64-gnu/bin/mips64el-linux-ar
 export LD=/opt/gcc-4.9.3-64-gnu/bin/mips64el-linux-ld
 
 export RANLIB=/opt/gcc-4.9.3-64-gnu/bin/mips64el-linux-ranlib</code></pre><p>（3）  指定安装目录：</p>
-<pre><code>./config no-asm shared --prefix=/usr/local/mips</code></pre><h1 id="3、修改OpenSSL的Makefile文件"><a href="#3、修改OpenSSL的Makefile文件" class="headerlink" title="3、修改OpenSSL的Makefile文件"></a>3、修改OpenSSL的Makefile文件</h1><p> （1）修改Makefile，查找全文删掉 -m64 关键字</p>
+<pre><code>./config no-asm shared --prefix=/usr/local/mips</code></pre><h2 id="3、修改OpenSSL的Makefile文件"><a href="#3、修改OpenSSL的Makefile文件" class="headerlink" title="3、修改OpenSSL的Makefile文件"></a>3、修改OpenSSL的Makefile文件</h2><p> （1）修改Makefile，查找全文删掉 -m64 关键字</p>
 <p> （2）修改以下配置</p>
 <pre><code>#SHLIB_MAJOR=1
 
@@ -223,7 +223,7 @@ SHLIB_EXT=.so.$(SHLIB_MAJOR)$(SHLIB_MINOR)</code></pre><p>这种修改的地方�
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/js/app.js?v=1589529963593"></script>
+<script src="/js/app.js?v=1589530185795"></script>
   
 
 
