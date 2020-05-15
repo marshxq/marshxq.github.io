@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1589525293497">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1589525512016">-->
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -59,6 +59,13 @@
             <i class="mdui-list-item-icon nexmoefont icon-home"></i>
             <div class="mdui-list-item-content">
                 回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
             </div>
         </a>
         
@@ -162,19 +169,19 @@
 
     
     <section class="nexmoe-comment">
-    <!-- 畅言公共 js 代码 start -->
-<script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=&lt;APP_ID&gt;">
-</script>
-<!-- 畅言公共 js 代码 end -->
-<!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="2020/05/14/我的第一篇博客文章/"></div>
+    <div id="gitment"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-(function(){
-var appid = '&lt;APP_ID&gt;';
-var conf = '&lt;CONF&gt;';
-var width = window.innerWidth || document.documentElement.clientWidth;
-if (width < 960) {
-window.document.write('<script id="changyan_mobile_js" charset="utf-8" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })();
+var gitment = new Gitment({
+    owner: 'nexmoe', // 你的 GitHub ID
+    repo: 'nexmoe.github.io', // 存储评论的 repo
+    oauth: {
+        client_id: '80b2453b6d5f37ad6225', // 你的 client ID
+        client_secret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb' // 你的 client secret
+    },
+})
+gitment.render('gitment')
 </script>
 </section>
   </div>
@@ -188,7 +195,7 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" src="http
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/js/app.js?v=1589525293501"></script>
+<script src="/js/app.js?v=1589525512021"></script>
   
 
 
