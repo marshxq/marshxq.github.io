@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>我的第一篇博客文章 - 一如年少de模样</title>
+  <title>GitLab搭建 - 一如年少de模样</title>
   <meta charset="UTF-8">
   <meta name="description" content="Coding changs world ------科学技术宅">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,22 +12,24 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="首秀 大家好，这是我第一次搭建Hexo博客  之前都是在博客园写文章，以后可以在这里跟大家分享自己喜欢的东西了  希望多多光临哈    我的博客园地址https:&#x2F;&#x2F;www.cnblogs.com&#x2F;marshu&#x2F;">
+  <meta name="description" content="搭建Gitlab1、添加gitlab镜像wget https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;gitlab-ce&#x2F;yum&#x2F;el8&#x2F;gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm2、安装Gitlabrpm -i  gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm3、修改gitlab配置文件指定服务器ip和自定义端口：vi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="https://marshxq.github.io/undefined.html">
+<meta property="og:title" content="GitLab搭建">
+<meta property="og:url" content="https://marshxq.github.io/GitLab.html">
 <meta property="og:site_name" content="一如年少de模样">
-<meta property="og:description" content="首秀 大家好，这是我第一次搭建Hexo博客  之前都是在博客园写文章，以后可以在这里跟大家分享自己喜欢的东西了  希望多多光临哈    我的博客园地址https:&#x2F;&#x2F;www.cnblogs.com&#x2F;marshu&#x2F;">
+<meta property="og:description" content="搭建Gitlab1、添加gitlab镜像wget https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;gitlab-ce&#x2F;yum&#x2F;el8&#x2F;gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm2、安装Gitlabrpm -i  gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm3、修改gitlab配置文件指定服务器ip和自定义端口：vi">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-14T13:26:59.000Z">
-<meta property="article:modified_time" content="2020-05-16T13:54:30.521Z">
+<meta property="og:image" content="https://img2020.cnblogs.com/i-beta/1518605/202003/1518605-20200315193101175-1033560317.png">
+<meta property="article:published_time" content="2020-05-16T12:04:56.000Z">
+<meta property="article:modified_time" content="2020-05-16T14:12:30.001Z">
 <meta property="article:author" content="青莲剑仙">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="软件">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img2020.cnblogs.com/i-beta/1518605/202003/1518605-20200315193101175-1033560317.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1589638391084">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1589638391075">-->
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -128,14 +130,14 @@
         <div class="nexmoe-post">
   
       <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
-          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="我的第一篇博客文章" class="lazyload">
-          <h1>我的第一篇博客文章</h1>
+          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="GitLab搭建" class="lazyload">
+          <h1>GitLab搭建</h1>
       </div>
   
   
   <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2020年05月14日</a>
-    <a><i class="nexmoefont icon-areachart"></i>66 字</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年05月16日</a>
+    <a><i class="nexmoefont icon-areachart"></i>187 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
 </div>
 
@@ -144,16 +146,12 @@
   </div>
 
   <article>
-    <h2 id="首秀"><a href="#首秀" class="headerlink" title="首秀"></a>首秀</h2><ul>
-<li><p>大家好，这是我第一次搭建Hexo博客</p>
-</li>
-<li><p>之前都是在博客园写文章，以后可以在这里跟大家分享自己喜欢的东西了</p>
-</li>
-<li><p>希望多多光临哈</p>
-</li>
-</ul>
-<hr>
-<h2 id="我的博客园地址"><a href="#我的博客园地址" class="headerlink" title="我的博客园地址"></a>我的博客园地址</h2><p><a href="https://www.cnblogs.com/marshu/" target="_blank" rel="noopener">https://www.cnblogs.com/marshu/</a></p>
+    <h1 id="搭建Gitlab"><a href="#搭建Gitlab" class="headerlink" title="搭建Gitlab"></a>搭建Gitlab</h1><h2 id="1、添加gitlab镜像"><a href="#1、添加gitlab镜像" class="headerlink" title="1、添加gitlab镜像"></a>1、添加gitlab镜像</h2><pre><code>wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el8/gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm</code></pre><h2 id="2、安装Gitlab"><a href="#2、安装Gitlab" class="headerlink" title="2、安装Gitlab"></a>2、安装Gitlab</h2><pre><code>rpm -i  gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm</code></pre><h2 id="3、修改gitlab配置文件指定服务器ip和自定义端口："><a href="#3、修改gitlab配置文件指定服务器ip和自定义端口：" class="headerlink" title="3、修改gitlab配置文件指定服务器ip和自定义端口："></a>3、修改gitlab配置文件指定服务器ip和自定义端口：</h2><pre><code>vim  /etc/gitlab/gitlab.rb</code></pre><h2 id="4、将9090端口添加到防火墙中"><a href="#4、将9090端口添加到防火墙中" class="headerlink" title="4、将9090端口添加到防火墙中"></a>4、将9090端口添加到防火墙中</h2><pre><code>firewall-cmd --zone=public --add-port=9090/tcp --permanent</code></pre><h2 id="5、重启防火墙"><a href="#5、重启防火墙" class="headerlink" title="5、重启防火墙"></a>5、重启防火墙</h2><pre><code>sudo systemctl reload firewalld</code></pre><h2 id="6、重置gitlab"><a href="#6、重置gitlab" class="headerlink" title="6、重置gitlab"></a>6、重置gitlab</h2><pre><code>gitlab-ctl reconfigure</code></pre><p>重置过程会需要一段时间：</p>
+<h2 id="7、启动gitlab"><a href="#7、启动gitlab" class="headerlink" title="7、启动gitlab"></a>7、启动gitlab</h2><pre><code>gitlab-ctl restart</code></pre><h2 id="8、访问Gitlab页面"><a href="#8、访问Gitlab页面" class="headerlink" title="8、访问Gitlab页面"></a>8、访问Gitlab页面</h2><p><strong>如果没有设置域名，在浏览器里面直接输入服务器IP和指定的端口号就可以进行访问，第一次登陆的时候会默认进入修改密码界面：</strong></p>
+<p><img data-sizes="auto" data-src="https://img2020.cnblogs.com/i-beta/1518605/202003/1518605-20200315193101175-1033560317.png" alt="" class="lazyload"></p>
+<p>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p>
+<blockquote>
+<pre><code>                          **浅水是喧哗的，深水是沉默的。**</code></pre></blockquote>
 
   </article>
 
@@ -167,7 +165,7 @@
       
   <div class="nexmoe-post-copyright">
     <strong>Author：</strong>青莲剑仙<br>
-    <strong>Link：</strong><a href="https://marshxq.github.io/undefined.html" title="https:&#x2F;&#x2F;marshxq.github.io&#x2F;undefined.html" target="_blank" rel="noopener">https:&#x2F;&#x2F;marshxq.github.io&#x2F;undefined.html</a><br>
+    <strong>Link：</strong><a href="https://marshxq.github.io/GitLab.html" title="https:&#x2F;&#x2F;marshxq.github.io&#x2F;GitLab.html" target="_blank" rel="noopener">https:&#x2F;&#x2F;marshxq.github.io&#x2F;GitLab.html</a><br>
     
       <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
     
@@ -183,7 +181,7 @@
     var gitalk = new Gitalk({
         clientID: '7d42d1ceb3de7dc59877',
         clientSecret: 'a04d1df578b39f72ac30511e52431502a1e19004',
-        id: 'Thu May 14 2020 21:26:59 GMT+0800',
+        id: 'Sat May 16 2020 20:04:56 GMT+0800',
         repo: 'marshxq.github.io',
         owner: 'marshxq',
         admin: 'marshxq'
@@ -202,7 +200,7 @@
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/js/app.js?v=1589638391086"></script>
+<script src="/js/app.js?v=1589638391080"></script>
   
 
 
