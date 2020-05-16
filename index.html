@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1589631154558">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1589631531742">-->
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -144,8 +144,11 @@
         <article>
             
                 <h1 id="搭建Gitlab"><a href="#搭建Gitlab" class="headerlink" title="搭建Gitlab"></a>搭建Gitlab</h1><h2 id="1、添加gitlab镜像"><a href="#1、添加gitlab镜像" class="headerlink" title="1、添加gitlab镜像"></a>1、添加gitlab镜像</h2><pre><code>wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el8/gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm</code></pre><h2 id="2、安装Gitlab"><a href="#2、安装Gitlab" class="headerlink" title="2、安装Gitlab"></a>2、安装Gitlab</h2><pre><code>rpm -i  gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm</code></pre><h2 id="3、修改gitlab配置文件指定服务器ip和自定义端口："><a href="#3、修改gitlab配置文件指定服务器ip和自定义端口：" class="headerlink" title="3、修改gitlab配置文件指定服务器ip和自定义端口："></a>3、修改gitlab配置文件指定服务器ip和自定义端口：</h2><pre><code>vim  /etc/gitlab/gitlab.rb</code></pre><h2 id="4、将9090端口添加到防火墙中"><a href="#4、将9090端口添加到防火墙中" class="headerlink" title="4、将9090端口添加到防火墙中"></a>4、将9090端口添加到防火墙中</h2><pre><code>firewall-cmd --zone=public --add-port=9090/tcp --permanent</code></pre><h2 id="5、重启防火墙"><a href="#5、重启防火墙" class="headerlink" title="5、重启防火墙"></a>5、重启防火墙</h2><pre><code>sudo systemctl reload firewalld</code></pre><h2 id="6、重置gitlab"><a href="#6、重置gitlab" class="headerlink" title="6、重置gitlab"></a>6、重置gitlab</h2><pre><code>gitlab-ctl reconfigure</code></pre><p>重置过程会需要一段时间：</p>
-<h2 id="7、启动gitlab"><a href="#7、启动gitlab" class="headerlink" title="7、启动gitlab"></a>7、启动gitlab</h2><pre><code>gitlab-ctl restart</code></pre><h2 id="8、访问Gitlab页面"><a href="#8、访问Gitlab页面" class="headerlink" title="8、访问Gitlab页面"></a>8、访问Gitlab页面</h2><p><strong>如果没有设置域名，在浏览器里面直接输入服务器IP和指定的端口号就可以进行访问，第一次登陆的时候会默认进入修改密码界面：</strong></p>
-<p>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<br><strong>浅水是喧哗的，深水是沉默的。</strong></p>
+<h2 id="7、启动gitlab"><a href="#7、启动gitlab" class="headerlink" title="7、启动gitlab"></a>7、启动gitlab</h2><pre><code>gitlab-ctl restart</code></pre><h2 id="8、访问Gitlab页面"><a href="#8、访问Gitlab页面" class="headerlink" title="8、访问Gitlab页面"></a>8、访问Gitlab页面</h2><p><strong>如果没有设置域名，在浏览器里面直接输入服务器IP和指定的端口号就可以进行访问，第一次登陆的时候会默认进入修改密码界面：</strong><br><img data-sizes="auto" data-src="https://img2020.cnblogs.com/i-beta/1518605/202003/1518605-20200315193101175-1033560317.png" alt="" class="lazyload"></p>
+<p>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p>
+<blockquote>
+<p><strong>浅水是喧哗的，深水是沉默的。</strong></p>
+</blockquote>
 
             
         </article>
@@ -253,7 +256,7 @@ SHLIB_EXT=.so.$(SHLIB_MAJOR)$(SHLIB_MINOR)</code></pre><p>这种修改的地方�
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/js/app.js?v=1589631154563"></script>
+<script src="/js/app.js?v=1589631531744"></script>
   
 
 
