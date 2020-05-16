@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1589542132960">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1589630921757">-->
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -49,7 +49,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>Articles</span>2</div>
+        <div><span>Articles</span>3</div>
         <div><span>Tags</span>0</div>
         <div><span>Categories</span>0</div>
     </div>
@@ -124,6 +124,35 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/2020/05/16/GitLab%E6%90%AD%E5%BB%BA/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="GitLab搭建" class="lazyload">
+                    <h1>GitLab搭建</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年05月16日</a>
+            <a><i class="nexmoefont icon-areachart"></i>187 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <h1 id="搭建Gitlab"><a href="#搭建Gitlab" class="headerlink" title="搭建Gitlab"></a>搭建Gitlab</h1><h2 id="1、添加gitlab镜像"><a href="#1、添加gitlab镜像" class="headerlink" title="1、添加gitlab镜像"></a>1、添加gitlab镜像</h2><pre><code>wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el8/gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm</code></pre><h2 id="2、安装Gitlab"><a href="#2、安装Gitlab" class="headerlink" title="2、安装Gitlab"></a>2、安装Gitlab</h2><pre><code>rpm -i  gitlab-ce-12.8.6-ce.0.el8.x86_64.rpm</code></pre><h2 id="3、修改gitlab配置文件指定服务器ip和自定义端口："><a href="#3、修改gitlab配置文件指定服务器ip和自定义端口：" class="headerlink" title="3、修改gitlab配置文件指定服务器ip和自定义端口："></a>3、修改gitlab配置文件指定服务器ip和自定义端口：</h2><pre><code>vim  /etc/gitlab/gitlab.rb</code></pre><h2 id="4、将9090端口添加到防火墙中"><a href="#4、将9090端口添加到防火墙中" class="headerlink" title="4、将9090端口添加到防火墙中"></a>4、将9090端口添加到防火墙中</h2><pre><code>firewall-cmd --zone=public --add-port=9090/tcp --permanent</code></pre><h2 id="5、重启防火墙"><a href="#5、重启防火墙" class="headerlink" title="5、重启防火墙"></a>5、重启防火墙</h2><pre><code>sudo systemctl reload firewalld</code></pre><h2 id="6、重置gitlab"><a href="#6、重置gitlab" class="headerlink" title="6、重置gitlab"></a>6、重置gitlab</h2><pre><code>gitlab-ctl reconfigure</code></pre><p>重置过程会需要一段时间：</p>
+<h2 id="7、启动gitlab"><a href="#7、启动gitlab" class="headerlink" title="7、启动gitlab"></a>7、启动gitlab</h2><pre><code>gitlab-ctl restart</code></pre><h2 id="8、访问Gitlab页面"><a href="#8、访问Gitlab页面" class="headerlink" title="8、访问Gitlab页面"></a>8、访问Gitlab页面</h2><p>如果没有设置域名，在浏览器里面直接输入服务器IP和指定的端口号就可以进行访问，第一次登陆的时候会默认进入修改密码界面：</p>
+<p>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p>
+<blockquote>
+<p>浅水是喧哗的，深水是沉默的。</p>
+</blockquote>
+
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/2020/05/15/mips%20%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
@@ -227,7 +256,7 @@ SHLIB_EXT=.so.$(SHLIB_MAJOR)$(SHLIB_MINOR)</code></pre><p>这种修改的地方�
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/js/app.js?v=1589542132962"></script>
+<script src="/js/app.js?v=1589630921765"></script>
   
 
 
